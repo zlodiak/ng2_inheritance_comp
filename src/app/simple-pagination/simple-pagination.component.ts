@@ -8,6 +8,12 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class SimplePaginationComponent {
 
+  @Input()
+  previousText = 'Previous-s';
+
+  @Input()
+  nextText = 'Next-s';	
+
   @Input() 
   pageCount: number;
 
